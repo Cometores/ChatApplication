@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ChatApplication.MVVM.ViewModel
+namespace ChatApplicationUI.MVVM.ViewModel
 {
     class ViewModelBase : INotifyPropertyChanged
     {

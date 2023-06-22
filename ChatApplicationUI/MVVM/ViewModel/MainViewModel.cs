@@ -1,9 +1,9 @@
-﻿using ChatApplication.Commands;
-using ChatApplication.MVVM.Model;
-using System;
+﻿using System;
 using System.Collections.ObjectModel;
+using ChatApplicationUI.Commands;
+using ChatApplicationUI.MVVM.Model;
 
-namespace ChatApplication.MVVM.ViewModel
+namespace ChatApplicationUI.MVVM.ViewModel
 {
     class MainViewModel : ViewModelBase
     {

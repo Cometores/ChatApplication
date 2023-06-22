@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace ChatApplication.Commands
+namespace ChatApplicationUI.Commands
 {
     public class DelegateCommand : ICommand
     {

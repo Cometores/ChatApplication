@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace ChatApplication.Controls
+namespace ChatApplicationUI.Controls
 {
     public partial class WindowPanel : UserControl
     {
@@ -11,19 +11,21 @@ namespace ChatApplication.Controls
             InitializeComponent();
         }
 
-        //Dragging window
+        /// <summary>
+        /// Event <c>Border_MouseDown</c> allows to drag and drop the window.
+        /// </summary>
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
-                Application.Current.MainWindow.DragMove();
+                Application.Current.MainWindow!.DragMove();
         }
 
         private void MinimizeButton_Click(object sender, RoutedEventArgs e) =>
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+            Application.Current.MainWindow!.WindowState = WindowState.Minimized;
 
         private void MaximizeButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.WindowState =
+            Application.Current.MainWindow!.WindowState =
                 Application.Current.MainWindow.WindowState != WindowState.Maximized
                 ? WindowState.Maximized
                 : WindowState.Normal;

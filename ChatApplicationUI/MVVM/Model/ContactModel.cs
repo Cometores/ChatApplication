@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChatApplication.MVVM.Model
+namespace ChatApplicationUI.MVVM.Model
 {
     class ContactModel
     {
